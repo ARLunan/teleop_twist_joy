@@ -1,0 +1,27 @@
+# ds4_twist.yaml On a standard DS4 controller routed via the joy node, 
+# the Left Stick maps to Axis 1 (Vertical / Linear X) and Axis 0 (Horizontal / Angular Z). 
+# L1 maps to Button 4, and R1 maps to Button 5.
+
+teleop_twist_joy_node:
+  ros__parameters:
+    # Axis configuration: Left Stick
+    axis_linear:
+      x: 1
+    axis_angular:
+      yaw: 0
+
+    # Button Mappings
+    enable_button: 4        # L1 Button
+    enable_turbo_button: 5  # R1 Button
+
+    # Velocity Scales (Standard)
+    scale_linear:
+      x: 0.5
+    scale_angular:
+      yaw: 0.8
+
+    # Velocity Scales (Turbo enabled via R1)
+    scale_linear_turbo:
+      x: 1.5
+    scale_angular_turbo:
+      yaw: 1.5
