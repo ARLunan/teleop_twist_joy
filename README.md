@@ -2,7 +2,7 @@ ros2/teleop_twist_joy
 =====================
 
 # Overview
-The purpose of this package is to provide a generic facility for tele-operating Twist-based ROS 2 robots with a standard joystick.
+This package is a varient of the ros2-drivers repository with a revised launch file that execututs the joy_linux package instead of the joy pckage. It also adds config files for Logitech F710 and Sony DualShock DS4 joysticks. The purpose of this package is to provide a generic facility for tele-operating Twist-based ROS 2 robots with a standard joystick.
 It converts joy messages to velocity commands.
 
 This node provides no rate limiting or autorepeat functionality.
